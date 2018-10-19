@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Download Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Your image is downloaded..!</h1>
+<script type="text/javascript">
+	var url = location.hash;
+  if (url == "#img1") {
+    var link = document.createElement('a');
+    link.href = "/images/Hotel Reservation Form _w.jpg";
+    link.download = 'Hotel Reservation Form.jpg';
+    link.dispatchEvent(new MouseEvent('click'));
+  }else if(url == "#img2"){
+    var link = document.createElement('a');
+    link.href = "/images/Triputhi Travel Schedule.jpg";
+    link.download = 'Triputhi Travel Schedule.jpg';
+    link.dispatchEvent(new MouseEvent('click'));
+  }
+debugger
+  
+</script>
+</body>
+</html>
